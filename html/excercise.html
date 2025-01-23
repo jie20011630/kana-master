@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/exercise.css">
+    <title>Kana Master - Exercise</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kosugi+Maru&display=swap');
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Kana Master</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/about_us.html">About Us</a></li>
+                <li><a href="../html/hiragana.html">Hiragana</a></li>
+                <li><a href="../html/excercise.html">Exercise</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-image">
+            <h2>Exercise</h2>
+        </div>
+    </section>
+
+    <!-- Example Section -->
+    <div class="example-section">
+        <div class="example">
+            <div class="example-image">
+                <img src="../pictures/exercise_ex.png" alt="Example Image">
+            </div>
+            <div class="example-text">
+                <p>Welcome to the exercise section! Review the Japanese kana you've learned, listen to the pronunciation of the words first, then try pronouncing them to see if your pronunciation can be correctly recognized!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exercise Section -->
+    <div class="exercise-section">
+        <!-- Ten exercise items -->
+        <div class="exercise-item">
+            <div class="exercise-block">
+                <img src="../pictures/example/kutsu.png" alt="shoes"><br>
+                <span class="kana">靴（くつ）</span>
+                <button class="audio-btn" onclick="playAudio('kutsu')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button><br>
+                <input type="text" id="speech1">
+                <button class="mic-btn" onclick="startSpeechRecognition(1)">
+                    <img src="../pictures/microphone.png" alt="Mic Icon">
+                </button>
+            </div>
+
+            <div class="exercise-block">
+                <img src="../pictures/example/neko.png" alt="cat"><br>
+                <span class="kana">猫（ねこ）</span>
+                <button class="audio-btn" onclick="playAudio('neko')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button><br>
+                <input type="text" id="speech2">
+                <button class="mic-btn" onclick="startSpeechRecognition(2)">
+                    <img src="../pictures/microphone.png" alt="Mic Icon">
+                </button>
+            </div>
+
+            <div class="exercise-block">
+                <img src="../pictures/example/yuki.png" alt="snow"><br>
+                <span class="kana">雪（ゆき）</span>
+                <button class="audio-btn" onclick="playAudio('yuki')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button><br>
+                <input type="text" id="speech3">
+                <button class="mic-btn" onclick="startSpeechRecognition(3)">
+                    <img src="../pictures/microphone.png" alt="Mic Icon">
+                </button>
+            </div>
+
+            <div class="exercise-block">
+                <img src="../pictures/example/eki.jpg" alt="station"><br>
+                <span class="kana">駅（えき）</span>
+                <button class="audio-btn" onclick="playAudio('eki')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button><br>
+                <input type="text" id="speech4">
+                <button class="mic-btn" onclick="startSpeechRecognition(4)">
+                    <img src="../pictures/microphone.png" alt="Mic Icon">
+                </button>
+            </div>
+
+            <div class="exercise-block">
+                <img src="../pictures/example/mikan.png" alt="tangerine"><br>
+                <span class="kana">みかん</span>
+                <button class="audio-btn" onclick="playAudio('mikan')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button><br>
+                <input type="text" id="speech5">
+                <button class="mic-btn" onclick="startSpeechRecognition(5)">
+                    <img src="../pictures/microphone.png" alt="Mic Icon">
+                </button>
+            </div>
+
+            <div class="exercise-block">
+                <img src="../pictures/example/kuruma.png" alt="car"><br>
+                <span class="kana">車（くるま）</span>
+                <button class="audio-btn" onclick="playAudio('kuruma')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button><br>
+                <input type="text" id="speech6">
+                <button class="mic-btn" onclick="startSpeechRecognition(6)">
+                    <img src="../pictures/microphone.png" alt="Mic Icon">
+                </button>
+            </div>
+
+            <div class="exercise-block">
+                <img src="../pictures/example/senesi.png" alt="teacher"><br>
+                <span class="kana">先生（せんせい）</span>
+                <button class="audio-btn" onclick="playAudio('sensei')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button><br>
+                <input type="text" id="speech7">
+                <button class="mic-btn" onclick="startSpeechRecognition(7)">
+                    <img src="../pictures/microphone.png" alt="Mic Icon">
+                </button>
+            </div>
+
+            <div class="exercise-block">
+                <img src="../pictures/example/kimono.png" alt="kimono"><br>
+                <span class="kana">着物（きもの）</span>
+                <button class="audio-btn" onclick="playAudio('kimono')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button><br>
+                <input type="text" id="speech8">
+                <button class="mic-btn" onclick="startSpeechRecognition(8)">
+                    <img src="../pictures/microphone.png" alt="Mic Icon">
+                </button>
+            </div>
+
+            <div class="exercise-block">
+                <img src="../pictures/example/heya.png" alt="room"><br>
+                <span class="kana">部屋（へや）</span>
+                <button class="audio-btn" onclick="playAudio('heya')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button><br>
+                <input type="text" id="speech9">
+                <button class="mic-btn" onclick="startSpeechRecognition(9)">
+                    <img src="../pictures/microphone.png" alt="Mic Icon">
+                </button>
+            </div>
+            
+
+            <div class="exercise-block">
+                <img src="../pictures/example/honwoyomu.png" alt="read a book"><br>
+                <span class="kana">本を読む<br>（ほんをよむ）</span>
+                <button class="audio-btn" onclick="playAudio('honwoyomu')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button><br>
+                <input type="text" id="speech10">
+                <button class="mic-btn" onclick="startSpeechRecognition(10)">
+                    <img src="../pictures/microphone.png" alt="Mic Icon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Kana Master. All rights reserved.</p>
+    </footer>
+    <script src="../java_script/exercise.js"></script>
+</body>
+</html>

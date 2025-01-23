@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ADD8E6;
+    color: black;
+    padding: 1rem 2rem;
+}
+
+.logo h1 {
+    font-family: "Alfa Slab One", serif;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin-left: 1.5rem;
+}
+
+.nav-bar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+.nav-bar ul li a:hover {
+    color: #fff;
+}
+
+.intro-section {
+    display: flex;
+    padding: 2rem;
+    background-color: #ffe5e5;
+}
+
+.intro-image {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.intro-text {
+    flex: 2;
+}
+
+.intro-text h2 {
+    font-family: "Kosugi Maru", sans-serif;
+    font-size: 2rem;
+    color: #333;
+}
+
+.intro-text p {
+    font-size: 20px;
+    color: #555;
+}
+
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color:  #f4f4f4;;
+}
+
+.feature {
+    text-align: center;
+    background-color:#fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+}
+
+.feature-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature h3 {
+    font-family: "Alfa Slab One", serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.feature p {
+    font-size: 18px;
+    color: #666;
+    margin: 1rem 0;
+}
+
+.button-link {
+    font: bold;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration-line: none;
+}
+
+.button-link:hover {
+    background-color: #ADD8E6;
+    color: #333;
+}
+
+.footer {
+    text-align: center;
+    background-color: #ADD8E6;
+    color: black;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .intro-section {
+        flex-direction: column;
+    }
+    .features-section {
+      flex-direction: column;
+    }
+    .feature{
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    .nav-bar ul li a {
+        font-size: 14px;
+    }
+  }

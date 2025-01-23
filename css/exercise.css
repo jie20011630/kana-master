@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ADD8E6;
+    color: black;
+    padding: 1rem 2rem;
+}
+
+.logo h1 {
+    font-family: "Alfa Slab One", serif;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.logo h1 a:hover {
+    color: #fff;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin-left: 1.5rem;
+}
+
+.nav-bar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+.nav-bar ul li a:hover {
+    color: #fff;
+}
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 350px;
+    background: url(../pictures/hiragana_page.png) no-repeat center center/cover;
+    opacity: 0.6;
+}
+
+.hero-section h2 {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 300;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+    opacity: 1;
+}
+
+/* Example Section */
+.example-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffe5e5;
+    margin-top: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.example {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Add some space between image and text */
+}
+
+.example-image img {
+    width: 350px; /* Reduce the image size */
+    height: auto;
+}
+
+.example-text {
+    text-align: left;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Exercise Section */
+.exercise-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffe5e5;
+    margin-top: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.exercise-item {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exercise-block {
+    width: 45%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.exercise-block img {
+    width: 100px;
+    height: auto;
+}
+
+.exercise-block .kana {
+    font-family: "Kosugi Maru", sans-serif;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    color: #000;
+}
+
+.exercise-block .kana-audio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.exercise-block .input-mic-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.exercise-block .audio-btn, .exercise-block .mic-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.audio-btn img,.mic-btn img {
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
+}
+
+/* Input and Button Styles */
+input[type="text"] {
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+} 
+
+.footer {
+    text-align: center;
+    background-color: #ADD8E6;
+    color: black;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .example {
+        flex-direction: column;
+    }
+
+    .exercise-item {
+        flex-direction: column;
+    }
+
+    .exercise-block .kana {
+        font-size: 18px;
+    }
+
+    .nav-bar ul li a {
+        font-size: 14px;
+    }
+}

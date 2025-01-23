@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/kana.css">
+    <title>Kana Master - Hiragana</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kosugi+Maru&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Kana Master</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/about_us.html">About Us</a></li>
+                <li><a href="../html/hiragana.html">Hiragana</a></li>
+                <li><a href="../html/excercise.html">Exercise</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hiragana-section">
+        <h2>Hiragana &raquo; や row</h2>
+        <div class="kana-row">
+            <div class="kana-item-container">
+                <div class="kana-item">
+                    <img src="../pictures/wa_n_gyo/Japanese_Hiragana_kyokashotai_WA.svg.png" alt="わ">
+                    <span class="romaji">wa</span>
+                    <button class="audio-btn" onclick="playAudio('wa')">
+                        <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                    </button>
+                </div>
+                <div class="stroke-order">
+                    <img src="../pictures/wa_n_gyo/Hiragana_wa_stroke_order_animation.gif" alt="Stroke Order">
+                </div>
+            </div>
+            <div class="example-item">
+                <img src="../pictures/example/wani.png" alt="crocodile">
+                <div class="example-text">
+                    <span>わに (wani)</span>
+                    <span>crocodile</span>
+                </div>
+
+                <button class="audio-btn" onclick="playAudio('wani')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button>
+            </div>
+        </div>
+
+<!-- kana u start-->
+        <div class="kana-row">
+            <div class="kana-item-container">
+                <div class="kana-item">
+                <img src="../pictures/wa_n_gyo/Japanese_Hiragana_kyokashotai_WO.svg.png" alt="を">
+                <span class="romaji">wo</span>
+                <button class="audio-btn" onclick="playAudio('wo')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button>
+                </div>
+            
+                <div class="stroke-order">
+                <img src="../pictures/wa_n_gyo/Hiragana_wo_stroke_order_animation.gif" alt="Stroke Order">
+                </div>
+            </div>
+
+            <div class="example-item">
+                <img src="../pictures/example/honwoyomu.png" alt="read a book">
+            <div class="example-text">
+            <span>ほんをよむ (honwoyomu)</span>
+            <span>read a book</span>
+            </div>
+        
+            <button class="audio-btn" onclick="playAudio('honwoyomu')">
+                <img src="../pictures/volume-up.png" alt="Speaker Icon">
+            </button>
+            </div>
+        </div>
+
+    <!-- kana o start -->
+    <div class="kana-row">
+        <div class="kana-item-container">
+            <div class="kana-item">
+            <img src="../pictures/wa_n_gyo/Japanese_Hiragana_kyokashotai_N.svg.png" alt="ん">
+            <span class="romaji">n</span>
+            <button class="audio-btn" onclick="playAudio('n')">
+                <img src="../pictures/volume-up.png" alt="Speaker Icon">
+            </button>
+            </div>
+        
+            <div class="stroke-order">
+            <img src="../pictures/wa_n_gyo/Hiragana_n_stroke_order_animation.gif" alt="Stroke Order">
+            </div>
+        </div>
+
+        <div class="example-item">
+            <img src="../pictures/example/yoru.jpg" alt="teacher">
+        <div class="example-text">
+        <span>せんせい (sensei)</span>
+        <span>teacher</span>
+        </div>
+    
+        <button class="audio-btn" onclick="playAudio('sensei')">
+            <img src="../pictures/volume-up.png" alt="Speaker Icon">
+        </button>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Kana Master. All rights reserved.</p>
+    </footer>
+
+    <script src="../java_script/audio.js"></script>
+</body>
+</html>

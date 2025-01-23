@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ADD8E6;
+    color: black;
+    padding: 1rem 2rem;
+}
+
+.logo h1 {
+    color: black;
+    font-family: "Alfa Slab One", serif;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin-left: 1.5rem;
+}
+
+.nav-bar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+.nav-bar ul li a:hover {
+    color: #fff;
+}
+
+.hiragana-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffe5e5;
+    border-radius: 10px;
+}
+
+.hiragana-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.kana-item img {
+    width: 80%;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-left: 0;
+}
+
+.kana-item {
+    text-align: left;
+}
+
+.kana-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.stroke-order {
+    margin: 0 1rem;
+}
+
+.stroke-order img {
+    width: 150px; 
+    height: auto;
+}
+
+.kana-item-container {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.example-item {
+    text-align: center;
+}
+
+.example-item img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 0.5rem;}
+
+.example-text {
+    font-family: "Kosugi Maru", sans-serif;;
+    display: block;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+
+.example-text span {
+    display: block;
+}
+
+.romaji {
+    font-size: 1.5rem;
+    color: #555;
+    margin-right: 1rem;
+}
+
+.audio-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.audio-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.example-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.footer {
+    text-align: center;
+    background-color: #ADD8E6;
+    color: black;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .nav-bar ul li a {
+        font-size: 14px;
+    }
+
+    .example-item img {
+        width: 100px;
+        height: auto;
+    }
+
+    .audio-btn img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .kana-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .romaji {
+        font-size: 1rem;
+    }
+  }

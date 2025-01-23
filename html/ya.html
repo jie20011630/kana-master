@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/kana.css">
+    <title>Kana Master - Hiragana</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kosugi+Maru&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Kana Master</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/about_us.html">About Us</a></li>
+                <li><a href="../html/hiragana.html">Hiragana</a></li>
+                <li><a href="../html/excercise.html">Exercise</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hiragana-section">
+        <h2>Hiragana &raquo; や row</h2>
+        <div class="kana-row">
+            <div class="kana-item-container">
+                <div class="kana-item">
+                    <img src="../pictures/ya_gyo/Japanese_Hiragana_kyokashotai_YA.svg.png" alt="や">
+                    <span class="romaji">ya</span>
+                    <button class="audio-btn" onclick="playAudio('ya')">
+                        <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                    </button>
+                </div>
+                <div class="stroke-order">
+                    <img src="../pictures/ya_gyo/Hiragana_ya_stroke_order_animation.gif" alt="Stroke Order">
+                </div>
+            </div>
+            <div class="example-item">
+                <img src="../pictures/example/yasai.png" alt="vegetable">
+                <div class="example-text">
+                    <span>やさい (yasai)</span>
+                    <span>vegetable</span>
+                </div>
+
+                <button class="audio-btn" onclick="playAudio('yasai')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button>
+            </div>
+        </div>
+
+<!-- kana u start-->
+        <div class="kana-row">
+            <div class="kana-item-container">
+                <div class="kana-item">
+                <img src="../pictures/ya_gyo/Japanese_Hiragana_kyokashotai_YU.svg.png" alt="ゆ">
+                <span class="romaji">yu</span>
+                <button class="audio-btn" onclick="playAudio('yu')">
+                    <img src="../pictures/volume-up.png" alt="Speaker Icon">
+                </button>
+                </div>
+            
+                <div class="stroke-order">
+                <img src="../pictures/ya_gyo/Hiragana_yu_stroke_order_animation.gif" alt="Stroke Order">
+                </div>
+            </div>
+
+            <div class="example-item">
+                <img src="../pictures/example/yuki.png" alt="yuki">
+            <div class="example-text">
+            <span>ゆき (yuki)</span>
+            <span>snow</span>
+            </div>
+        
+            <button class="audio-btn" onclick="playAudio('yuki')">
+                <img src="../pictures/volume-up.png" alt="Speaker Icon">
+            </button>
+            </div>
+        </div>
+
+    <!-- kana o start -->
+    <div class="kana-row">
+        <div class="kana-item-container">
+            <div class="kana-item">
+            <img src="../pictures/ya_gyo/Japanese_Hiragana_kyokashotai_YO.svg.png" alt="よ">
+            <span class="romaji">yo</span>
+            <button class="audio-btn" onclick="playAudio('yo')">
+                <img src="../pictures/volume-up.png" alt="Speaker Icon">
+            </button>
+            </div>
+        
+            <div class="stroke-order">
+            <img src="../pictures/ya_gyo/Hiragana_yo_stroke_order_animation.gif" alt="Stroke Order">
+            </div>
+        </div>
+
+        <div class="example-item">
+            <img src="../pictures/example/yoru.jpg" alt="night">
+        <div class="example-text">
+        <span>よる (yoru)</span>
+        <span>night</span>
+        </div>
+    
+        <button class="audio-btn" onclick="playAudio('yoru')">
+            <img src="../pictures/volume-up.png" alt="Speaker Icon">
+        </button>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Kana Master. All rights reserved.</p>
+    </footer>
+
+    <script src="../java_script/audio.js"></script>
+</body>
+</html>
